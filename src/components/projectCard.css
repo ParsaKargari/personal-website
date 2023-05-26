@@ -1,0 +1,91 @@
+/* projectCard.css */
+
+.project-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  max-height: 210px;
+  min-height: 145px;
+  font-family: "Roboto", sans-serif;
+}
+
+.project-card hr {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.languages {
+  color: #666;
+}
+
+.project-card h3 {
+  color: #11a372;
+}
+
+.project-card p {
+  margin-top: 10px;
+}
+
+.project-card:hover {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+.github-link,
+.info-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  background-color: #ddd;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.github-link:hover,
+.info-button:hover {
+  background-color: #ccc;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.more-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none; /* Prevent clicks when not visible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.more-info:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.more-info.show {
+  opacity: 1;
+  pointer-events: auto; /* Allow clicks when visible */
+}

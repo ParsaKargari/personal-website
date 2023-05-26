@@ -1,6 +1,7 @@
 # Parsa's Personal Website
 
 Welcome to my personal website! This repository contains the source code and content for my personal website where I showcase my skills, projects, and experiences as a software engineering student.
+[Live Website](https://parsakargari.live/)
 
 ## Technologies Used
 
